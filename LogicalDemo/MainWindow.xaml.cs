@@ -24,5 +24,23 @@ namespace LogicalDemo
         {
             InitializeComponent();
         }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Demo.AddChild(new Child
+            {
+                Background = Brushes.ForestGreen,
+            });
+        }
+
+        private void SwitchButton_Click(object sender, RoutedEventArgs e)
+        {
+            Demo.SwitchCurrentChild();
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            Demo.RemoveCurrentChild();
+        }
     }
 }
