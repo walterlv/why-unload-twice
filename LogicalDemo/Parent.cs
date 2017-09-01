@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -61,12 +62,13 @@ namespace LogicalDemo
             PART_ContentHost.Content = _current;
         }
 
-        public void RemoveCurrentChild()
+        public async void RemoveCurrentChild()
         {
             if (_current != null && _children.Count > 1)
             {
                 var toRemove = _current;
                 SwitchCurrentChild();
+                //await Task.Delay(1);
                 RemoveChild(toRemove);
             }
         }

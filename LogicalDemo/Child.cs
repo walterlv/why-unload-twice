@@ -16,7 +16,11 @@ namespace LogicalDemo
         {
             _problemChild.Unloaded += (sender, args) =>
             {
-                Debug.WriteLine("Unload");
+                Debug.WriteLine("Content Unloaded");
+            };
+            Unloaded += (sender, args) =>
+            {
+                Debug.WriteLine("Self Unloaded");
             };
         }
 
@@ -34,6 +38,10 @@ namespace LogicalDemo
         {
             AddLogicalChild(_problemChild);
             PART_ContentHost.Content = _problemChild;
+            PART_ContentHost.Unloaded += (sender, args) =>
+            {
+                Debug.WriteLine("Host Unloaded");
+            };
         }
     }
 }
