@@ -1,4 +1,4 @@
-﻿<Window x:Class="LogicalDemo.MainWindow"
+<Window x:Class="LogicalDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -24,10 +24,10 @@
     <Grid>
         <local:Parent x:Name="Demo"/>
         <Button HorizontalAlignment="Left" VerticalAlignment="Top"
-                Content="增加一个孩子" Click="AddButton_Click"/>
+                Content="Add Child" Click="AddButton_Click"/>
         <Button HorizontalAlignment="Center" VerticalAlignment="Top"
-                Content="切换一个孩子" Click="SwitchButton_Click"/>
+                Content="Switch Child" Click="SwitchButton_Click"/>
         <Button HorizontalAlignment="Right" VerticalAlignment="Top"
-                Content="删除这个孩子" Click="Delete_Click"/>
+                Content="Delete Child" Click="Delete_Click"/>
     </Grid>
 </Window>
