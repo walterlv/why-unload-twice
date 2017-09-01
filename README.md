@@ -12,4 +12,4 @@ Why the `_problemChild` unloaded twice ? It really confused me.
 
 - A non-generic style is added.
 - When removing an FrameworkElement from a visual tree, it is also been removed from a logical tree at the same time.
-- The visual tree and the logical tree is diffent.
+- The visual tree and the logical tree is different.
